@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio e Currículo Pessoal</title>
+</head>
+<body>
+    <h1>Leticia Alves Ferreira - Desenvolvedora Web</h1>
+    <ul style="list-style-type: disc;">
+    <li><p><a href="#sobre">Sobre</a></p></li>
+    <li><p><a href="#projetos">Projetos</a></p></li>
+    <li><p><a href="#contato">Contato</a></p></li>
+    </ul>
+    <hr>
+    <h2 id="sobre">Sobre Mim</h2>
+    <img src="assets/leticiaPicture.png" alt="Foto de Leticia" width="150" height="150">
+    <p>Sou estudante de <strong>Desenvolvimento de Sistemas</strong> no SENAI</p>
+    <p>Tenho conhecimento em <i>HTML, CSS</i> e estou aprendendo <i>JavaScript</i></p>
+    <h3>Minhas Habilidades</h3>
+    <ul>
+        <li>HTML5 Semântico</li>
+        <li>CSS3 e Responsividade</li>
+        <li>Formulários e Validação</li>
+        <li>Estruturação de Dados</li>
+    </ul>
+    <hr>
+    <h2 id="projetos">Meus Projetos</h2>
+    <table border="1" cellpadding="10" cellspacing="0" width="50%">
+        <!-- Cabeçalho da tabela -->
+         <thead>
+            <tr>
+                <th>Projeto</th>
+                <th>Tecnologias</th>
+                <th>Status</th>
+                <th>Link</th>
+            </tr>
+         </thead>
+         <!-- Corpo da tabela -->
+          <tbody>
+            <tr>
+                <td>Teste de Maioridade</td>
+                <td>HTML, CSS, PHP</td>
+                <td>Concluído</td>
+                <td><a href="https://github.com/leticiaalvesferreira/php-exemplos-basicos/blob/main/Assunto_3/5a_desafio1.php">Ver Projeto</a></td>
+            </tr>
+            <tr>
+                <td>Loja de Games</td>
+                <td>HTML</td>
+                <td>Concluído</td>
+                <td><a href="https://github.com/leticiaalvesferreira/Desafio-HTML-Loja-de-Games">Ver Projeto</a></td>
+            </tr>
+            <tr>
+                <td>Página para Login</td>
+                <td>HTML, PHP</td>
+                <td>Em andamento</td>
+                <td><a href="https://github.com/leticiaalvesferreira/php-exemplos-basicos/blob/main/Assunto%204/6_login.php">Ver Projeto</a></td>
+            </tr>
+          </tbody>
+     </table>
+     <hr>
+     <h2 id="contato">Entre em Contato</h2>
+
+    <!-- Formulário com método POST e ação -->
+    <form action="processar.php" method="post">
+    <fieldset>
+        <legend>Dados do Contato</legend>
+        <!-- Campo de texto simples -->
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <!-- Campo de email com validação -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Lista de seleção (select) -->
+        <label for="assunto">Assunto:</label><br>
+        <select id="assunto" name="assunto">
+            <option value="">Selecione um assunto:</option>
+            <option value="proposta">Proposta de estágio</option>
+            <option value="duvida">Dúvida sobre projeto</option>
+            <option value="parceria">Parceria</option>
+        </select><br><br>
+
+        <!-- Área de texto -->
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Botões de formulário -->
+        <button type="submit">Enviar Mensagem</button>
+        </fieldset>
+    </form>
+    <hr>
+    <p>&copy; 2026. Desenvolvido durante o curso do SENAI.</p>
+    <hr>
+<p><a href="mailto:leticiaalvesferreira158@gmail.com">leticiaalvesferreira158@gmail.com</a> | <a href="tel:+5511917464328">(11) 91746-4328</a></p>
+</body>
+</html>
